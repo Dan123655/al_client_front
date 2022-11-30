@@ -56,7 +56,7 @@ const isEditing = Boolean(id)
       spellChecker: false,
       maxHeight: '400px',
       autofocus: true,
-      placeholder: 'Введите текст...',
+      placeholder: 'Type text...',
       status: false,
       autosave: {
         enabled: true,
@@ -108,13 +108,13 @@ const isEditing = Boolean(id)
   return (
     <Paper style={{ padding: 30 }}>
       <Button onClick={()=>inputFileRef.current.click()} variant="outlined" size="large">
-        Загрузить превью
+        Cover upload
       </Button>
       <input ref={inputFileRef} type="file" onChange={handleChangeFile} hidden />
       {imageUrl && (
         <>
           <Button variant="contained" color="error" onClick={onClickRemoveImage}>
-        Удалить
+        Delete
       </Button>
           <img className={styles.image} src={`http://localhost:3500${imageUrl}`} alt="Uploaded" />
         </>
@@ -125,7 +125,7 @@ const isEditing = Boolean(id)
       <TextField
         classes={{ root: styles.title }}
         variant="standard"
-        placeholder="Заголовок статьи..."
+        placeholder="Post title..."
         value={title}
         onChange={e=>setTitle((e).target.value)}
         fullWidth
@@ -137,7 +137,7 @@ const isEditing = Boolean(id)
           {isEditing?'Save':'Publish'}
         </Button>
         <a href="/">
-          <Button size="large">Отмена</Button>
+          <Button size="large">Cancel</Button>
         </a>
       </div>
     </Paper>

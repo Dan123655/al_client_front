@@ -43,7 +43,7 @@ export const Login = () => {
   return (
     <Paper classes={{ root: styles.root }}>
       <Typography classes={{ root: styles.title }} variant="h5">
-        Вход в аккаунт
+        Sign In
       </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
       <TextField
@@ -55,14 +55,14 @@ export const Login = () => {
           {...register('email',{required:'Provide email adress'})}
         fullWidth
       />
-        <TextField className={styles.field} label="Пароль"
+        <TextField className={styles.field} label="password"
                   error={Boolean(errors.password?.message)}
         helperText={errors.password?.message}
                 {...register('password',{required:'Provide email adress'})}
        fullWidth />
      
       <Button type="submit" size="large" variant="contained" fullWidth>
-        Войти
+        Enter
         </Button>
         </form>
     </Paper>

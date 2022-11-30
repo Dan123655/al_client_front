@@ -49,7 +49,7 @@ export const Registration = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
 
       <Typography classes={{ root: styles.title }} variant="h5">
-        Создание аккаунта
+        Sign Up
       </Typography>
       <div className={styles.avatar}>
         <Avatar sx={{ width: 100, height: 100 }} />
@@ -77,7 +77,7 @@ export const Registration = () => {
       
 
       <Button disabled={!isValid} type='submit' size="large" variant="contained" fullWidth>
-        Зарегистрироваться
+        Create Account
       </Button>
 </form>
     </Paper>
