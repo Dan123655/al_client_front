@@ -11,27 +11,33 @@
 }
 
 .logo {
-  background-color: black;
-  color: #fff;
-  font-weight: 700;
-  line-height: 35px;
-  text-transform: uppercase;
-  letter-spacing: 0.15px;
-  border-radius: 5px;
-  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  color: rgb(37, 37, 37);
+  font-weight: 500;
+
   text-decoration: none;
 
   &:hover {
-    background-color: #4361ee;
+    color: #acc7f8;
   }
 }
 
 .buttons {
-  button {
-    margin-left: 10px;
-  }
+width: auto;
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
 
   a {
+    margin-right: 15px;
     text-decoration: none;
+  }
+  svg {
+    margin-left: 10px;
+    &:hover {
+      color: #acc7f8;
+    }
   }
 }
